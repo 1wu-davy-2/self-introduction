@@ -25,7 +25,8 @@ npm run preview  # 本地预览构建产物
 
 页面上所有文字都集中在 **`src/data/profile.js`** 一个文件里：
 
-- `name`：姓名（当前取自 GitHub 公开昵称「魏鹏」）
+- `name`：姓名（魏新科）
+- 头像：`src/assets/avatar.png`（首屏圆形展示，替换文件即可换头像）
 - `intro` / `bio`：首屏一句话与「关于我」段落
 - `facts`：基本信息栏（年龄、学历、经验等，留空自动隐藏）
 - `chips`：首屏标签

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 const SCRIPT = [
   {
     cmd: 'whoami',
-    out: ['魏鹏 —— Web 全栈开发工程师 · 运维监控方向'],
+    out: ['魏新科 —— Web 全栈开发工程师 · 运维监控方向'],
   },
   {
     cmd: 'cat stack.txt',
@@ -70,7 +70,7 @@ export default function Terminal() {
         <i className="t-dot r" />
         <i className="t-dot y" />
         <i className="t-dot g" />
-        <span className="t-title">weipeng@monitor: ~</span>
+        <span className="t-title">weixinke@monitor: ~</span>
       </div>
       <div className="t-body">
         {history.map((h, i) =>

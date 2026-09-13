@@ -1,11 +1,13 @@
 import Terminal from './Terminal.jsx'
 import { profile } from '../data/profile.js'
+import avatarUrl from '../assets/avatar.png'
 
 export default function Hero() {
   return (
     <header id="top" className="hero">
       <div className="hero-grid">
         <div className="hero-copy">
+          <img className="hero-avatar" src={avatarUrl} alt={`${profile.name} 的头像`} />
           <p className="hero-status">
             <span className="status-dot" aria-hidden="true" />
             持续运行中 · uptime 4 年

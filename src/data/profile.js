@@ -7,7 +7,7 @@
 // ============================================================
 
 export const profile = {
-  name: '魏鹏', // 取自 GitHub 公开昵称，可自行修改
+  name: '魏新科',
   title: 'Web 全栈开发工程师',
   intro: '四年 Java 后端经验，主业运维监控方向：基于开源监控系统改造构建国产化监控采集平台；现转型 Django 全栈，前端用 React。',
   github: 'https://github.com/1wu-davy-2',
