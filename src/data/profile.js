@@ -35,7 +35,7 @@ export const profile = {
     { value: 4, suffix: '年', label: '开发经验', sub: 'Java 起步 · 全栈进行中' },
     { value: 22, suffix: '个', label: '开源仓库', sub: '量化 · 工具 · MCP' },
     { value: 6, suffix: '组', label: '技术领域', sub: '后端 · 监控 · 数据' },
-    { value: 8, suffix: '个', label: '解决案例', sub: '运维监控视角 · 持续补充' },
+    { value: 12, suffix: '个', label: '解决案例', sub: '企业级 4 · 项目级 8' },
   ],
 
   // 技术栈跑马灯
@@ -126,7 +126,19 @@ export const profile = {
     {
       group: '前端与工具',
       note: '',
-      items: ['React', 'JavaScript / TypeScript', 'HTML / CSS', 'Vite', 'Linux', 'Docker', 'Git'],
+      items: [
+        'React',
+        'Vue 3',
+        'Vue Router',
+        'Pinia',
+        'Element Plus',
+        'JavaScript / TypeScript',
+        'HTML / CSS',
+        'Vite',
+        'Linux',
+        'Docker',
+        'Git',
+      ],
     },
   ],
 
@@ -154,7 +166,44 @@ export const profile = {
     },
   ],
 
-  // 解决案例（定性描述，具体数字请按真实项目替换）
+  // 企业级场景：整理自公开行业案例（附来源链接），展示行业视野
+  // 注意：这些是同业的公开实践，用于体现对行业级监控体系的理解，非本人亲历项目
+  enterpriseCases: [
+    {
+      sector: '银行 · 金融',
+      diagram: 'bank',
+      title: '数据中心全栈自动化监控',
+      text: '参考平安银行等金融同业的公开实践：以分布式监控架构覆盖网络设备、存储、主机、数据库、中间件与应用的全栈对象，分级部署 Proxy 汇聚数据，满足金融级 7×24 连续性与审计要求。',
+      points: ['分布式 Proxy 分级汇聚', '全栈对象统一告警', '同城双活双中心部署'],
+      result: '故障发现从分钟级到秒级，监管审计全程可追溯。',
+    },
+    {
+      sector: 'SaaS 服务',
+      diagram: 'saas',
+      title: '多租户 SLA 可观测体系',
+      text: '参考畅捷通 × 阿里云等公开案例：SaaS 化后基础资源监控成熟，但面向用户体验的可观测缺失；补齐外部拨测、租户级 SLI/SLO 与状态页，把 SLA 承诺变成可度量的闭环。',
+      points: ['租户级 SLI / SLO 度量', '外部拨测模拟真实用户', '状态页与事件响应联动'],
+      result: '客户体验问题先于投诉发现，续约谈判有数据可依。',
+    },
+    {
+      sector: '高校',
+      diagram: 'edu',
+      title: '校园网统一监控平台',
+      text: '参考中南财经政法大学的公开实践：基于 Zabbix 7.0 构建高可用 IP Radar 监控管理系统，覆盖全校 2.8 万余台主机与用户终端，异构设备与应用统一告警、图形化展示。',
+      points: ['2.8 万+ 主机与终端覆盖', '异构设备统一监控告警', '高可用平台架构'],
+      result: '精细化运维：故障定位从小时级缩短到分钟级。',
+    },
+    {
+      sector: '政企',
+      diagram: 'gov',
+      title: '政务云统一运维与分权分域',
+      text: '参考省级数字运维平台建设实践：多委办局系统统一接入监控，覆盖 60+ 业务系统、告警收敛率达 90%；国产化环境适配，分权分域满足数据隔离与运维考核要求。',
+      points: ['60+ 业务系统统一接入', '告警收敛率 90%', '信创适配 · 分权分域'],
+      result: '运维考核有据可依，跨部门协同效率提升。',
+    },
+  ],
+
+  // 解决案例（项目级实战，定性描述，具体数字请按真实项目替换）
   cases: [
     {
       tag: 'Java',
